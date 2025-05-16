@@ -9,8 +9,10 @@ export default function Home() {
 
     useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['Coding', 'Web Development', 'Software Engineering', 'Data Science', 'Machine Learning'],
+        strings: ['Coding', 'Web Development', 'Software Engineering', 'Data Science', 'Life'],
         typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
       });
   
       return () => {
@@ -24,10 +26,10 @@ export default function Home() {
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
-            A <span className="font-semibold">free repository</span> for community <br className="hidden lg:block" /> components using <span className="font-semibold underline decoration-primary"><span ref={el} /></span>
+            A free<span className="font-semibold"> Blog Website </span> Curated by an Engineer-Sarthak. <br className="hidden lg:block" /> Currently woring on <span className="font-semibold underline decoration-primary"><span ref={el} /></span>
           </h1>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-            Open source Tailwind UI components and templates to <br className="hidden lg:block" /> bootstrap your new apps, projects or landing sites!
+            This blog website showcase different <b>Projects</b> designed by me , also consist of different <b>Blogs</b> that i wrote in free time. <br className="hidden lg:block" />
           </p>
           <div className="mt-6 bg-transparent border rounded-lg dark:border-gray-700 lg:w-2/3 focus-within:border-primary focus-within:ring focus-within:ring-primary dark:focus-within:border-primary focus-within:ring-opacity-20">
             <form action="https://www.creative-tim.com/twcomponents/search" className="flex flex-wrap justify-between md:flex-row">
@@ -102,32 +104,29 @@ export default function Home() {
  <section className="py-12 bg-white dark:bg-gray-900">
   <div className="container px-4 mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">What Our Clients Say</h2>
-      <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Hear from our satisfied customers</p>
+      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">What Our Readers Say--</h2>
+      <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Hear from our satisfied readers/Users.</p>
     </div>
     <div className="flex flex-wrap justify-center">
       {/* Testimonial 1 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-          <p className="text-gray-600 dark:text-gray-400">"This service has been a game-changer for our business. Highly recommend!"</p>
-          <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200">John Doe</h3>
-          <p className="text-gray-500 dark:text-gray-300">CEO, Company A</p>
+          <p className="text-gray-600 dark:text-gray-400">"These blogs are intersting and help me utilize my free time.Sometimes I recommend it to my friends who like reading."</p>
+          <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200">Nilesh</h3>
         </div>
       </div>
       {/* Testimonial 2 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-          <p className="text-gray-600 dark:text-gray-400">"Amazing experience! The team was professional and the results were outstanding."</p>
-          <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200">Jane Smith</h3>
-          <p className="text-gray-500 dark:text-gray-300">Marketing Director, Company B</p>
+          <p className="text-gray-600 dark:text-gray-400">"Amazing experience! The guy was professional and the results were outstanding."</p>
+          <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200">Gautam</h3>
         </div>
       </div>
       {/* Testimonial 3 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
           <p className="text-gray-600 dark:text-gray-400">"Exceptional service and support. We couldn't be happier with the results."</p>
-          <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200">Michael Brown</h3>
-          <p className="text-gray-500 dark:text-gray-300">CTO, Company C</p>
+          <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200">Brown</h3>
         </div>
       </div>
     </div>
@@ -138,17 +137,17 @@ export default function Home() {
 <section className="py-12 bg-gray-100 dark:bg-gray-900">
   <div className="container px-4 mx-auto">
     <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Top Blogs</h2>
+      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-200">Most Liked Blogs</h2>
       <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">Check out our most popular blog posts</p>
     </div>
     <div className="flex flex-wrap justify-center">
       {/* Blog 1 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105">
-          <img src="/typescript.webp" className="w-full h-64 object-cover rounded-t-lg"/>
+          <img src="/eng-life.jpeg" className="w-full h-64 object-cover rounded-t-lg"/>
           <div className="mt-4">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Blog Post Title 1</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-400">A brief description of the blog post goes here. It should be engaging and informative.</p>
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">The Engineer’s Diary</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">Ever spent hours debugging only to realize it was a tiny typo? Welcome to the club. In this post, I share one of my most frustrating yet hilarious coding experiences, what it taught me, and why sometimes stepping away from the screen is the smartest move.</p>
             <Button className="m-2" variant="outline" href="/blog-post-1">Read More</Button>
           </div>
         </div>
@@ -156,10 +155,10 @@ export default function Home() {
       {/* Blog 2 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105">
-          <img src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blog 2" className="w-full h-64 object-cover rounded-t-lg"/>
+          <img src="./kitchen.jpg" alt="Blog 2" className="w-full h-64 object-cover rounded-t-lg"/>
           <div className="mt-4">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Blog Post Title 2</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-400">A brief description of the blog post goes here. It should be engaging and informative.</p>
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200"> Kitchen Debugged</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">Cooking is just debugging hunger with taste. In this post, I share a quick 15-minute masala pasta recipe perfect for late-night coding sessions or post-class cravings. No fancy tools, just pantry basics, and a lot of flavor. Because coders need fuel too—delicious fuel.</p>
             <Button className="m-2" variant="outline" href="/blog-post-2">Read More</Button>
           </div>
         </div>
@@ -167,10 +166,10 @@ export default function Home() {
       {/* Blog 3 */}
       <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
         <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105">
-          <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg" alt="Blog 3" className="w-full h-64 object-cover rounded-t-lg"/>
+          <img src="./micro-mm.png" alt="Blog 3" className="w-full h-64 object-cover rounded-t-lg"/>
           <div className="mt-4">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Blog Post Title 3</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-400">A brief description of the blog post goes here. It should be engaging and informative.</p>
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Micro-Moments: The Beauty</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">After hours of battling bugs and logic loops, I stepped outside—and it felt like I rebooted myself. This post reflects on the calm that follows chaos, how evening walks clear mental cache, and why sometimes the best ideas hit when you're not even trying.</p>
             <Button className="m-2" variant="outline" href="/blog-post-3">Read More</Button>
           </div>
         </div>
